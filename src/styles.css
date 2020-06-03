@@ -127,6 +127,7 @@ body {
   align-items: center;
   padding: 1rem;
   text-align: center;
+  min-height: 20rem;
 }
 
 .repo .btn a {

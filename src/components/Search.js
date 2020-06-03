@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Nav from './Nav';
 import SelectUser from './SelectUser';
 import UserInfo from './UserInfo';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
 function Search() {
   const [userInfo, setUserInfo] = useState({});
@@ -28,11 +30,17 @@ function Search() {
           {reposInfo &&
             reposInfo.map((repo) => (
               <div className='repo' key={repo.id}>
-                <h3>{repo.name}</h3>
+                <h3 style={{ color: 'red' }}>{repo.name}</h3>
                 <div>{repo.description}</div>
                 <div>
-                  Stars : {repo.stargazers_count}
-                  Forks : {repo.forks_count}
+                  <div>
+                    <FontAwesomeIcon icon={faStar} /> Stars :{' '}
+                    {repo.stargazers_count}
+                  </div>
+                  <div>
+                    <FontAwesomeIcon icon={faCodeBranch} /> Forks :{' '}
+                    {repo.forks_count}
+                  </div>
                 </div>
                 <div>Language : {repo.language}</div>
                 <button className='btn'>
