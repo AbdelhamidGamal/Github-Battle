@@ -1,0 +1,113 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general */
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* utils */
+.centerItemsInDiv {
+  text-align: center;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 4rem;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.smallbtn {
+  border: none;
+  background-color: white;
+  color: red;
+}
+
+.navBar {
+  margin-top: 10px;
+  /* background-color: red; */
+}
+
+.navBar > a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.showCase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.showCase > h1 {
+  margin-bottom: 2rem;
+}
+
+.selectPlayers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selectPlayer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.selectPlayer > div {
+  font-weight: lighter;
+}
+
+.selectPlayer > form > input {
+  width: 100%;
+  padding: 0.2rem;
+  margin: 1rem 0;
+}
+
+.profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.winnerPage {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.winnerPage img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+.winnerPage ul {
+  margin-top: 2rem;
+  list-style: none;
+  text-align: left;
+}
+
+.searchPage img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.searchPage ul {
+  list-style: none;
+}
