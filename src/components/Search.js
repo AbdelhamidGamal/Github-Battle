@@ -55,10 +55,10 @@ function Search() {
   }
 
   return (
-    <>
+    <div className='searchPageBeforeFindingSomething'>
       <Nav />
       <SelectUser setPlayer={handleUserInfo} />
-    </>
+    </div>
   );
 }
 
