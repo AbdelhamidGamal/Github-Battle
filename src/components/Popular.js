@@ -24,15 +24,12 @@ function Popular() {
       `https://api.github.com/search/repositories?q=${query}&sort=stars&order=desc`
     );
     const data = await res.json();
-    console.log(data);
     setstate(data.items);
   };
 
   useEffect(() => {
     getRepos('all');
   }, []);
-
-  console.log(state);
 
   return (
     <>

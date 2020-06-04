@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './components/Home';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Battle from './components/Battle';
 import Search from './components/Search';
 import Popular from './components/Popular';
